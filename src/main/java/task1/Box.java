@@ -13,7 +13,12 @@ public class Box extends Thread {
         user.start();
         toy.start();
 
-        user.join();
+        try {
+              user.join();
+            } catch (InterruptedException e) {
+              e.printStackTrace();
+            }
+        
         toy.interrupt();
     }
 }
