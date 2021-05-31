@@ -10,7 +10,7 @@ public class Toy extends Thread {
     public void run() {
         while (true) {
             if (isInterrupted()) return;
-            if (Box.tumbler == true) {
+            if (Box.tumbler) {
                 Box.tumbler = false;
                 System.out.println(getName() + " выключил тумблер");
             }
