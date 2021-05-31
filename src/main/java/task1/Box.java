@@ -13,8 +13,7 @@ public class Box extends Thread {
         user.start();
         toy.start();
 
-        while (count != COUNT_TURN_ON){
-        }
+        user.join();
         toy.interrupt();
     }
 }
