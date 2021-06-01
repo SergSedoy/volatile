@@ -9,17 +9,9 @@ public class Main {
     
     public static void main(String[] args) throws InterruptedException {
 
-        User th1 = new User("первый поток");
-        User th2 = new User("второй поток");
-        User th3 = new User("третий поток");
-
-        th1.start();
-        th2.start();
-        th3.start();
-
-        th1.join();
-        th2.join();
-        th3.join();
+        new User("первый поток").start();
+        new User("второй поток").start();
+        new User("третий поток").start();
 
         System.out.println("\nРезультат: " + stat.sum());
     }
