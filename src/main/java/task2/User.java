@@ -1,6 +1,5 @@
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.concurrent.atomic.LongAdder;
+package task2;
+
 import java.util.stream.IntStream;
 
 
